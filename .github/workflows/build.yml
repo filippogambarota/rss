@@ -12,13 +12,11 @@ on:
     inputs:
       tags:
         description: 'tag'  
-permissions:
-  contents: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@3
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 18.15.0

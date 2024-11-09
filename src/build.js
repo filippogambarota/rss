@@ -26,6 +26,56 @@ const CONTENT_TYPES = [
 ];
 
 const config = readCfg('./src/config.json');
+
+// NEW
+
+// Function to convert the text file into a JSON object
+function parseFeedFile(filePath) {
+  // Read file content
+  let content;
+  try {
+    content = readFileSync(filePath, 'utf-8');
+  } catch (error) {
+    console.error('Error reading file:', error);
+    return {};
+  }
+
+  const lines = content.split('\n');
+  const result = {};
+  let currentCategory = '';
+
+  console.log('Parsing file...');
+  
+  for (const line of lines) {
+    const trimmedLine = line.trim();
+
+    // Detect category headers (e.g., "## Tech")
+    if (trimmedLine.startsWith('##')) {
+      currentCategory = trimmedLine.slice(2).trim().toLowerCase();
+      result[currentCategory] = [];
+      console.log(`Found category: ${currentCategory}`);
+    } 
+    // Detect URLs (e.g., "- https://example.com")
+    else if (trimmedLine.startsWith('-')) {
+      const url = trimmedLine.slice(1).trim();
+      if (currentCategory) {
+        result[currentCategory].push(url);
+      }
+    }
+  }
+  return result;
+}
+
+// Read and convert the text file
+const inputPath = 'README.md';
+const outputPath = './src/feeds.json';
+
+const jsonData = parseFeedFile(inputPath);
+
+writeFileSync(outputPath, JSON.stringify(jsonData, null, 2));
+
+// NEW
+
 const feeds = USE_CACHE ? {} : readCfg('./src/feeds.json');
 const cache = USE_CACHE ? readCfg(CACHE_PATH) : {};
 

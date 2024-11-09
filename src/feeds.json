@@ -1,5 +1,6 @@
 {
   "feeds": [
-    "https://www.tuttoandroid.net/feed/"
+    "https://www.tuttoandroid.net/feed/",
+    "https://feeds.feedburner.com/RBloggers"
   ]
 }

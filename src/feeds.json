@@ -2,5 +2,8 @@
   "tech": [
     "https://www.tuttoandroid.net/feed/",
     "https://feeds.feedburner.com/RBloggers"
+  ],
+  "r": [
+    "https://feeds.feedburner.com/RBloggers"
   ]
 }

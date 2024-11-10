@@ -34,7 +34,7 @@ export const template = ({ allItems, groups, errors, now }) => (`
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>🦉 reader</title>
+  <title>👻 reader</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -44,7 +44,7 @@ export const template = ({ allItems, groups, errors, now }) => (`
 
     <div class="sidebar">
       <header>
-        <h1 class="inline" style="user-select: none;">🦉</h1>
+        <h1 class="inline" style="user-select: none;">👻</h1>
         <ul class="group-selector">
           <li><a href="#all-articles">all articles</a></li>
           ${forEach(groups, group => `
@@ -66,7 +66,7 @@ export const template = ({ allItems, groups, errors, now }) => (`
         }
 
         <p>
-          Last updated ${now}. Powered by <a href="https://github.com/kevinfiol/rss-reader">Bubo Reader</a>, a project by <a href="https://george.mand.is">George Mandis</a> and <a href="https://kevinfiol.com">Kevin Fiol</a>.
+          Last updated ${now}.
         </p>
       </footer>
     </div>
@@ -101,8 +101,8 @@ export const template = ({ allItems, groups, errors, now }) => (`
       `)}
 
         <div class="default-text">
-          <p>🦉📚 welcome to bubo reader</p>
-          <p>select a feed group to get started</p>
+          <p>👻📚 Welcome to Filippo's RSS</p>
+          <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2dsZWJ4MzByemc1ZDRremM5M2ltOHY2emJvenF3YjdzZmJjZzAzbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TLOl2tSYNSZM0KnpcE/giphy.gif" width="500"/>
         </div>
     </main>
   </div>

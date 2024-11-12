@@ -3,8 +3,8 @@
 ## Tech
 
 - https://www.tuttoandroid.net/feed/
-- https://feeds.feedburner.com/RBloggers
 
-## R
+## Statistics
 
 - https://feeds.feedburner.com/RBloggers
+- https://statmodeling.stat.columbia.edu/feed/

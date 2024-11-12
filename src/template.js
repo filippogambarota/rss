@@ -36,6 +36,8 @@ export const template = ({ allItems, groups, errors, now }) => (`
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>👻 reader</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
   <div class="app">
@@ -44,7 +46,7 @@ export const template = ({ allItems, groups, errors, now }) => (`
 
     <div class="sidebar">
       <header>
-        <h1 class="inline" style="user-select: none;">👻</h1>
+        <h1 class="inline" style="user-select: none;">👻 <a href="https://github.com/filippogambarota/rss"><i class="fa-brands fa-github fa-2xs"></i></a></h1>
         <ul class="group-selector">
           <li><a href="#all-articles">all articles</a></li>
           ${forEach(groups, group => `

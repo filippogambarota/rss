@@ -4,6 +4,10 @@
 
 - https://www.tuttoandroid.net/feed/
 
+## Tools
+
+- https://quarto.org/docs/blog/index.xml
+
 ## Statistics
 
 - https://feeds.feedburner.com/RBloggers

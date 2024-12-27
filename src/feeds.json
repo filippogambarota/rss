@@ -1,9 +1,17 @@
 {
   "tech": [
-    "https://www.tuttoandroid.net/feed/",
-    "https://feeds.feedburner.com/RBloggers"
+    "https://www.tuttoandroid.net/feed/"
   ],
-  "r": [
-    "https://feeds.feedburner.com/RBloggers"
+  "tools": [
+    "https://quarto.org/docs/blog/index.xml"
+  ],
+  "statistics": [
+    "https://feeds.feedburner.com/RBloggers",
+    "https://statmodeling.stat.columbia.edu/feed/",
+    "https://www.fharrell.com/index.xml"
+  ],
+  "youtube": [
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCaM-zH6ji5kWncFMaBBc7Yg",
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UC0oObx_f7G_FVcJgOvujtIQ"
   ]
 }

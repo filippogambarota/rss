@@ -29,6 +29,11 @@ const config = readCfg('./src/config.json');
 
 // NEW
 
+// remove comments
+function removeComments(input) {
+  return input.replace(/<!--.*?-->/gs, '');
+}
+
 // Function to convert the text file into a JSON object
 function parseFeedFile(filePath) {
   // Read file content
@@ -47,7 +52,8 @@ function parseFeedFile(filePath) {
   console.log('Parsing file...');
   
   for (const line of lines) {
-    const trimmedLine = line.trim();
+    var trimmedLine = line.trim();
+    trimmedLine = removeComments(trimmedLine);
 
     // Detect category headers (e.g., "## Tech")
     if (trimmedLine.startsWith('##')) {

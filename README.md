@@ -15,6 +15,7 @@
 - https://feeds.feedburner.com/RBloggers
 - https://statmodeling.stat.columbia.edu/feed/
 - https://www.fharrell.com/index.xml
+- https://journal.r-project.org/rss.atom
 
 ## Youtube
 
